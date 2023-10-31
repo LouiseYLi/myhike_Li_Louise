@@ -18,11 +18,11 @@
 .btn-info {
     color: #274C77; /* Light shade for text on info button */
     background-color: #A3CEF1; /* Accent color for button background */
-    border-color: #274C77; /* Dark shade for button border */
+    border-color: #000000; /* Dark shade for button border */
 }
 
 .btn-primary {
-    color: #274C77; /* Light shade for text */
+    color: #ffffff; /* Light shade for text */
     font-size: 150%;
     background-color: #274C77; /* Dark shade for primary button background */
     border-color: #274C77; /* Darkest shade for border */
@@ -30,7 +30,11 @@
 }
 
 body {
-    background-color: #274C77; /* Light shade for body background */
+    background-color: white; /* Light shade for body background */
+}
+
+.footerPlaceholder {
+    background-color: #6096BA;
 }
 /*-------------------------------------
  * customize material design icon sizes 
