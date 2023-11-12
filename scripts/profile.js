@@ -27,10 +27,13 @@ function populateUserInfo() {
                         })
                 } else {
                     // No user is signed in.
-                    console.log ("No user is signed in");
+                    console.log ("No user is signed in.");
                 }
             });
         }
+
+//call the function to run it 
+populateUserInfo();
 
 function editUserInfo() {
     //Enable the form fields
@@ -55,5 +58,3 @@ function saveUserInfo() {
 
 }
 
-//call the function to run it 
-populateUserInfo();
