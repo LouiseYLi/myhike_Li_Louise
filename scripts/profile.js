@@ -37,5 +37,23 @@ function editUserInfo() {
     document.getElementById('personalInfoFields').disabled = false;
     }
 
+function saveUserInfo() {
+    userName = document.getElementById('nameInput').value;       //get the value of the field with id="nameInput"
+    userSchool = document.getElementById('schoolInput').value;     //get the value of the field with id="schoolInput"
+    userCity = document.getElementById('cityInput').value;       //get the value of the field with id="cityInput"
+
+    currentUser.update ({
+        name: userName,
+        school: userSchool,
+        city: userCity
+    })
+    .then(() => {
+        console.log("Document updated successfully.");
+    })
+
+    document.getElementById('personalInfoFields').disabled = true;
+
+}
+
 //call the function to run it 
 populateUserInfo();
