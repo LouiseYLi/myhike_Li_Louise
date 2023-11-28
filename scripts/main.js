@@ -68,10 +68,15 @@ getNameFromAuth(); //run the function
 // Input param is the String representing the day of the week, aka, the document name
 function readQuote(day) {
     db.collection("quotes").doc(day)                                                      //name of the collection and documents should matach excatly with what you have in Firestore
+<<<<<<< HEAD
 .onSnapshot(dayDoc => {                                                               //arrow notation
     // console.log("inside");
     // console.log( doc.data() );
             console.log("current document data: " + dayDoc.data());                          //.data() returns data object
+=======
+    .onSnapshot(dayDoc => {                                                               //arrow notation
+           console.log("current document data: " + dayDoc.data());                          //.data() returns data object
+>>>>>>> 4e3feb79947388ff116f674811b434ac79b2b982
            document.getElementById("quote-goes-here").innerHTML = dayDoc.data().quote;      //using javascript to display the data on the right place
            
            //Here are other ways to access key-value data fields
